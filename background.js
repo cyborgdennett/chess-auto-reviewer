@@ -26,6 +26,7 @@ function onError(error) {
 }
 
 async function reviewAllGames(gameLinks) {
+  if (gameLinks === null) return;
   if (gameLinks.length == 0) return;
   const activeTabIds = new Set();
 
